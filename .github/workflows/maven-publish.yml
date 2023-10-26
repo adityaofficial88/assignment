@@ -70,8 +70,9 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
 
     - name: Build and push
-      uses: docker/build-push-action@v5
-      with:
-        push: true
-        tags: adityaverticurl/assignment
+      run: docker push adityaverticurl/assignment
+      # uses: docker/build-push-action@v5
+      # with:
+      #   push: true
+      #   tags: adityaverticurl/assignment
         
